@@ -1,0 +1,53 @@
+*{
+margin: 0px;
+padding: 5px;
+box-sizing: border-box;
+}
+
+.navbarsobremi {
+font-family: "Bitcount Grid Double", system-ui;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: italic;
+font-variation-settings:
+"slnt" 0,
+"CRSV" 0.5,
+"ELSH" 0,
+"ELXP" 0;
+font-size: 20px;
+color: rgb(251, 249, 252);
+background-color: rgb(192, 135, 235);
+}
+
+
+.nombre {
+    font-size: 35px;
+}
+
+.contenido {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
+width: auto;
+height: 600px;
+background: rgba(200, 181, 248, 0.596);
+font-size: 35px;
+
+}
+
+.caja {
+font-size: 50px;
+
+}
+.contenido img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.descripcion {
+    font-size: 15px;
+}
+
