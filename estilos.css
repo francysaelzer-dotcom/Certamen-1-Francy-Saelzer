@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(192, 135, 235);
-    --secondary-color: #9589fd;
-    --background-light: rgba(228, 219, 250, 0.596);
+    --secondary-color: #306385;
+    --background-light: rgba(249, 248, 252, 0.596);
     --text-dark: #333;
     --text-light: #fff;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,31 +17,40 @@ header {
     background-color: rgb(192, 135, 235);
     color: var(--text-light);
     padding: 1rem 2rem;
-    /* Alineamos el logo y la navegación horizontalmente */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Fijamos el header en la parte superior al hacer scroll */
     position: sticky;
     top: 0;
     z-index: 1000;
-    gap:20px;
+    gap: 20px;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    /* Los enlaces de la navbar también usan flexbox */
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+    font-size: 14px;
 }
 
 header nav a:hover {
     color: var(--secondary-color);
+
 }
-.contenido-image img {
-    width: 300px;
-    height: 300px;
+
+nav a {
+    text-decoration: none; 
+    color: #6e18d6;  
+
+}
+    
+.nombre {
+    font-size: 25px;
+}
+.contenido-imagen img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -49,10 +58,9 @@ header nav a:hover {
 
 .contenido-texto {
     flex: 1;
+    padding: 20px;
 }
 
-
-/* Secciones generales */
 section {
     padding: 4rem 2rem;
     max-width: 1200px;
@@ -69,12 +77,12 @@ h6 {
     color: var(--primary-color);
 }
 
-/* Estilos de tabla */
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
-    background: #efd8ff;
+    background: #f5e8ff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -85,33 +93,101 @@ table td {
     border-bottom: 1px solid #6e18d6;
 }
 
-
-
-
-.grid-datos {
-    /* Usamos Grid para crear un diseño en columnas */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+table {
+    border-radius: 8px;
+    overflow: hidden; /* Para que los bordes redondeados se vean en las esquinas */
+    margin-bottom: 2rem;
 }
 
+table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
 
-.proyecto-card {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Usamos flexbox en columna para alinear contenido de la tarjeta */
+table tbody tr:nth-child(even) {
+    background-color: rgba(192, 135, 235, 0.1); /* Filas alternas con color suave */
+}
+
+table tbody tr:hover {
+    background-color: #f0dbff; /* Efecto hover para la tabla */
+    cursor: default;
+}
+
+.habilidades-listas {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    background-color: #ffffff; /* Fondo gris claro suave */
+    padding: 3rem;
+}
+
+.seccion-habilidades {
+    background-color: var(--secondary-color); /* Usa tu gris muy claro #f9f9f9 */
+    padding: 4rem 2rem;
+}
+
+.seccion-habilidades {
+    background-color: var(--secondary-color); /* Fondo gris claro o lavanda muy pálido */
+    padding: 3rem 1rem;
     text-align: center;
 }
 
-.proyecto-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+.titulo-seccion {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
+.subtitulo {
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Para que sea responsivo en tablets y móviles */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tarjeta-blanca {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px; /* Bordes muy redondeados como en la imagen */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidad */
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    text-align: left; /* El texto de la lista va a la izquierda */
+}
+
+.encabezado-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.encabezado-tarjeta h3 {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: #1a202c; /* Un tono oscuro para los títulos de la tarjeta */
+}
+
+.badge {
+    background-color: #e53e3e; /* Rojo de la imagen referencial */
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.tarjeta-blanca ul, 
+.tarjeta-blanca ol {
+    padding-left: 1.2rem;
+    color: #4a5568;
+    line-height: 2; /* Mayor espacio entre los elementos de la lista */
+}
