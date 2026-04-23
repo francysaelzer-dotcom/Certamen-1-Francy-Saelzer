@@ -1,48 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="estilos.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet"> 
-
-<link rel="preconnect" href="<https://fonts.googleapis.com>">
-<link rel="preconnect" href="<https://fonts.gstatic.com>" crossorigin>
-<link href="<https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap>" rel="stylesheet">
-
-<link rel="preconnect" href="<https://fonts.googleapis.com>">
-<link rel="preconnect" href="<https://fonts.gstatic.com>" crossorigin>
-<link href="<https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap>" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-<nav class="navbarsobremi">
-    <div>
-        <img src="./assets/mariposa.jpg" alt="Imagen de ejemplo" width="50">
-        <div class="nombre">Francy Saelzer Díaz</div>
-        <a href="sobremi">Sobre mi</a>
-        <a href="habilidades">Habilidades</a>
-        <a href="proyectos">Proyectos</a>
-        <a href="contacto">Contacto</a>
+    <header>
+        <img src="./assets/mariposa.jpg" alt="Imagen de ejemplo" width="50" height="30"> 
+        <nav class="nombre">Francy Saelzer Díaz
+            <ul>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="sobre-mi"  class="contenido">
+            <div class="contenido-texto">
+                <h1>Hola, soy Francy Saelzer</h1>
+                <p><strong> Estudiante de analista programador</strong></p>Actualmente descubriendo el mundo de la programación en Inacap, sede Talcahuano.</p>
+            </div>
         
-    </div>
-</nav>
+            <div class="contenido-image">
+                <img src="./assets/yop.jpg" alt="Imagen mia" width="200">
+            </div>
 
-<div class="contenido">
-    <div class="contenido-text">
-    <div class="caja">Hola, soy Francy Saelzer</div>
-    <div class="descripcion">Estudiante de analista programador</div>
-    <div class="descripcion">Actualmente descubriendo el mundo de la programación en Inacap, sede Talcahuano.</div>
-    </div>
-    
-    <div class="contenido-image">
-    <img src="./assets/yop.jpg" alt="Imagen mia" width="200">
-    </div>
-    
+            <h2>Datos personales</h2>
+            <div class="grid-datos">
+                <table>
+                <tbody>
+                    <tr>
+                        <td>Edad:</td>
+                        <td>24 años</td>
+                    </tr>
+                    <tr>
+                        <td>Ciudad:</td>
+                        <td>Concepción</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>Francy@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Carrera:</td>
+                        <td>Analista programador</td>
+                    </tr>
+                    <tr>
+                        <td>Intereses:</td>
+                        <td>Crochet, python y puzzles</td>
+                    </tr>
+                </tbody>
+            </table>   
+
+        </section>
+    </main>
 </body>
 </html>

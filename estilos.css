@@ -1,53 +1,117 @@
+:root {
+    --primary-color: rgb(192, 135, 235);
+    --secondary-color: #9589fd;
+    --background-light: rgba(228, 219, 250, 0.596);
+    --text-dark: #333;
+    --text-light: #fff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 *{
-margin: 0px;
-padding: 5px;
-box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.navbarsobremi {
-font-family: "Bitcount Grid Double", system-ui;
-font-optical-sizing: auto;
-font-weight: 600;
-font-style: italic;
-font-variation-settings:
-"slnt" 0,
-"CRSV" 0.5,
-"ELSH" 0,
-"ELXP" 0;
-font-size: 20px;
-color: rgb(251, 249, 252);
-background-color: rgb(192, 135, 235);
+header {
+    background-color: rgb(192, 135, 235);
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    /* Alineamos el logo y la navegación horizontalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Fijamos el header en la parte superior al hacer scroll */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    gap:20px;
 }
 
-
-.nombre {
-    font-size: 35px;
+header nav ul {
+    display: flex;
+    list-style: none;
+    /* Los enlaces de la navbar también usan flexbox */
+    display: flex;
+    gap: 1.5rem;
 }
 
-.contenido {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: left;
-width: auto;
-height: 600px;
-background: rgba(200, 181, 248, 0.596);
-font-size: 35px;
-
+header nav a:hover {
+    color: var(--secondary-color);
 }
-
-.caja {
-font-size: 50px;
-
-}
-.contenido img {
-    width: 250px;
-    height: 250px;
+.contenido-image img {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    object-fit: cover; 
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.descripcion {
-    font-size: 15px;
+.contenido-texto {
+    flex: 1;
+}
+
+
+/* Secciones generales */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Estilos de tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #efd8ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #6e18d6;
+}
+
+
+
+
+.grid-datos {
+    /* Usamos Grid para crear un diseño en columnas */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+.proyecto-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Usamos flexbox en columna para alinear contenido de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.proyecto-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
 }
 
