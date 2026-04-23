@@ -54,15 +54,18 @@ nav a {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    flex-direction: row;
 }
 
 .contenido-texto {
     flex: 1;
     padding: 20px;
+    justify-content: flex-end;
+    text-align: left;
 }
 
 section {
-    padding: 4rem 2rem;
+    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -75,6 +78,7 @@ h5,
 h6 {
     margin-bottom: 1.5rem;
     color: var(--primary-color);
+    font-size: 25px;
 }
 
 
@@ -96,7 +100,7 @@ table td {
 table {
     border-radius: 8px;
     overflow: hidden; 
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 table thead {
@@ -116,7 +120,7 @@ table tbody tr:hover {
 
 .seccion-habilidades {
     background-color: var(--secondary-color); 
-    padding: 3rem 1rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -251,30 +255,5 @@ footer a {
     color: var(--secondary-color);
 }
 
-/* MEDIA QUERIES (Responsividad)*/
 
-@media (max-width: 768px) {
-    .grid-proyectos {
-       
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-
-
-@media (max-width: 480px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    section {
-        padding: 2rem 1rem;
-    }
-}
 
