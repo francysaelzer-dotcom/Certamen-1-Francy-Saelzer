@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <img src="./assets/mariposa.jpg" alt="Imagen de ejemplo" width="50" height="30"> 
+        <img src="./assets/mariposa.jpg" alt="Imagen de ejemplo" width="40" height="auto"> 
         <nav class="nombre">Francy Saelzer Díaz
             <ul>
                 <li><a href="#sobre-mi">Sobre mi</a></li>
@@ -29,9 +29,14 @@
                 <p><strong> Estudiante de analista programador</strong></p>Actualmente descubriendo el mundo de la programación en Inacap, sede Talcahuano.</p>
             </div>
         
-            <div class="contenido-image">
+            <div class="contenido-imagen">
                 <img src="./assets/yop.jpg" alt="Imagen mia" width="200">
             </div>
+            <article>
+                <div class="contenido-texto"> 
+                    <p>Comencé mi camino en informática cuando estaba estudiando traducción de idiomas. Unos meses después decidí dejar esa carrera y enfocarme en este nuevo interés. Mi objetivo es encontrar un trabajo relacionado a la tecnología, mientras termino de estudiar Ingeniería en Informática.</p>
+                </div>
+            </article>
 
             <h2>Datos personales</h2>
             <div class="grid-datos">
@@ -58,9 +63,130 @@
                         <td>Crochet, python y puzzles</td>
                     </tr>
                 </tbody>
-            </table>   
+                </table>   
+            </div>
+        </section>
 
+        <section id="habilidades">
+            <h3>Mis Habilidades Técnicas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel de Dominio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Medio</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Medio</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Basico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="habilidades" class="seccion-habilidades">
+            <h2 class="titulo-seccion">Habilidades</h2>
+            <p class="subtitulo">Tecnologías y competencias</p>
+
+            <div class="contenedor-flex">
+                <article class="tarjeta-blanca">
+                    <div class="encabezado-tarjeta">
+                        <h3>Competencias Técnicas</h3>
+                        <span class="badge"></span>
+                    </div>
+                    <ul>
+                        <li>Maquetación responsiva</li>
+                        <li>Control de versiones con Git</li>
+                        <li>Diseño con Flexbox y Grid</li>
+                        <li>Accesibilidad web (WCAG)</li>
+                    </ul>
+                </article>
+
+                <article class="tarjeta-blanca">
+                    <div class="encabezado-tarjeta">
+                        <h3>Ruta de Aprendizaje</h3>
+                        <span class="badge"></span>
+                    </div>
+                    <ol>
+                        <li>HTML5 y CSS3 (actual)</li>
+                        <li>JavaScript ES6+</li>
+                        <li>React.js</li>
+                        <li>Node.js y Express</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="proyectos">
+            <h4>Mis Proyectos</h4>
+            <div class="grid-proyectos">
+                <article class="proyecto-card">
+                    <h5>Proyecto 1: HApp</h5>
+                    <img src="./assets/Proyecto 1.jpg" alt="Proyecto E-commerce" width="300" height="200">
+                    <p>Una app web para la gestion de proyectos.</p>
+                
+                    <ol>
+                        <li>Diseño</li>
+                        <li>Desarrollo</li>
+                        <li>Despliegue</li>
+                    </ol>
+                </article>
+                
+                <article class="proyecto-card">
+                    <h5>Proyecto 2: Digital Journal</h5>
+                    <img src="./assets/Proyecto 2.jpg" alt="Proyecto Blog" width="300" height="200">
+                    <p>Este sitio web es un portafolio personal para mostrar mis habilidades y proyectos como
+                        desarrollador web front-end.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h6>Contáctame</h6>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="trabajo">Propuesta de trabajo</option>
+                        <option value="saludo">Solo saludar</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
         </section>
     </main>
+
+
+    <footer>
+        <p><span>2026 Francy Saelzer.</span> Proyecto con fines educativos.</p>
+
 </body>
 </html>
+
